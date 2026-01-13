@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+    <theme>standard</theme>
+    <documentTitle>CloudBerry Automation Report</documentTitle>
+    <reportName>BDD Execution - Cucumber + Extent</reportName>
+    <encoding>utf-8</encoding>
+    <timestampFormat>MMM dd, yyyy HH:mm:ss</timestampFormat>
+  </configuration>
+</extentreports>
