@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Firefox</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 12 02:14:45 EST 2026</td>
+<td>Started on:</td><td>Tue Jan 13 14:53:29 EST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>103 seconds (103157 ms)</td>
+<tr><td>Total time:</td><td>111 seconds (111906 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -70,20 +70,21 @@ function toggleAllBoxes() {
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Complete purchase successfully", "Complete Purchase"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;button-payment-methods&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (1163,527) because another element &lt;div id=&quot;modal-shipping&quot; class=&quot;modal show&quot;&gt; obscures it
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;button-payment-methods&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (1475,530) because another element &lt;div id=&quot;modal-shipping&quot; class=&quot;modal show&quot;&gt; obscures it
 Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.7.3&apos;, java.version: &apos;21.0.9&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [c71bb818-df18-4ad1-a9ef-5368073a258c, clickElement {id=8f50dc84-36ac-4718-8d03-cad7d546ceb6}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0.1, moz:accessibilityChecks: false, moz:buildID: 20251217121356, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28192, moz:profile: C:\Users\shada\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (c71bb818-df18-4ad1-a9ef-5368073a258c)] -&gt; id: button-payment-methods]
-Session ID: c71bb818-df18-4ad1-a9ef-5368073a258c
+Command: [22d9719a-2a8e-48a6-ac97-422d378a981b, clickElement {id=ae2c35fc-8c2c-4b73-8f63-4c7e841d5f04}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0.1, moz:accessibilityChecks: false, moz:buildID: 20251217121356, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 39249, moz:profile: /var/folders/s_/gtx7gycs2yq..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (22d9719a-2a8e-48a6-ac97-422d378a981b)] -&gt; id: button-payment-methods]
+Session ID: 22d9719a-2a8e-48a6-ac97-422d378a981b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -97,16 +98,16 @@ Session ID: c71bb818-df18-4ad1-a9ef-5368073a258c
 	at jdk.proxy2/jdk.proxy2.$Proxy42.click(Unknown Source)
 	at pageObjects.CheckoutPage.completeCheckout(CheckoutPage.java:47)
 	at stepDefinitions.ShoppingSteps.user_enters_billing_and_shipping_details(ShoppingSteps.java:76)
-	at ✽.user enters billing and shipping details(file:///C:/Workspaces/Dec2025BatchTest/CloudBerry_BDD_Framework/CloudBerry_BDD_Framework/src/test/resources/features/TC04_CompletePurchase.feature:14)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1188280228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1188280228'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;button-payment-methods&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (1163,527) because another element &lt;div id=&quot;modal-shipping&quot; class=&quot;modal show&quot;&gt; obscures it
+	at ✽.user enters billing and shipping details(file:///Users/raymondrohring/eclipse-workspace/CloudBerry_BDD_Framework/src/test/resources/features/TC04_CompletePurchase.feature:14)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1170412612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170412612'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;button-payment-methods&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; is not clickable at point (1475,530) because another element &lt;div id=&quot;modal-shipping&quot; class=&quot;modal show&quot;&gt; obscures it
 Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.7.3&apos;, java.version: &apos;21.0.9&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [c71bb818-df18-4ad1-a9ef-5368073a258c, clickElement {id=8f50dc84-36ac-4718-8d03-cad7d546ceb6}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0.1, moz:accessibilityChecks: false, moz:buildID: 20251217121356, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28192, moz:profile: C:\Users\shada\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (c71bb818-df18-4ad1-a9ef-5368073a258c)] -&gt; id: button-payment-methods]
-Session ID: c71bb818-df18-4ad1-a9ef-5368073a258c
+Command: [22d9719a-2a8e-48a6-ac97-422d378a981b, clickElement {id=ae2c35fc-8c2c-4b73-8f63-4c7e841d5f04}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0.1, moz:accessibilityChecks: false, moz:buildID: 20251217121356, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.6.0, moz:processID: 39249, moz:profile: /var/folders/s_/gtx7gycs2yq..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (22d9719a-2a8e-48a6-ac97-422d378a981b)] -&gt; id: button-payment-methods]
+Session ID: 22d9719a-2a8e-48a6-ac97-422d378a981b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -125,71 +126,15 @@ Session ID: c71bb818-df18-4ad1-a9ef-5368073a258c
 	at jdk.proxy2/jdk.proxy2.$Proxy42.click(Unknown Source)
 	at pageObjects.CheckoutPage.completeCheckout(CheckoutPage.java:47)
 	at stepDefinitions.ShoppingSteps.user_enters_billing_and_shipping_details(ShoppingSteps.java:76)
-	at ✽.user enters billing and shipping details(file:///C:/Workspaces/Dec2025BatchTest/CloudBerry_BDD_Framework/CloudBerry_BDD_Framework/src/test/resources/features/TC04_CompletePurchase.feature:14)
+	at ✽.user enters billing and shipping details(file:///Users/raymondrohring/eclipse-workspace/CloudBerry_BDD_Framework/src/test/resources/features/TC04_CompletePurchase.feature:14)
 </pre></div></td>
-<td>11</td>
-<td>runners.TestRunner@7e6f74c</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to wishlist", "Add Product to Wish List"</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference ddfa3269-52d6-4303-8ade-5f4dde9e343a is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0f6d9dc9-0ac3-4189-a827-950f2d449aea, getElementText {id=ddfa3269-52d6-4303-8ade-5f4dde9e343a}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0.1, moz:accessibilityChecks: false, moz:buildID: 20251217121356, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29152, moz:profile: C:\Users\shada\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (0f6d9dc9-0ac3-4189-a827-950f2d449aea)] -&gt; xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]]
-Session ID: 0f6d9dc9-0ac3-4189-a827-950f2d449aea
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy42.getText(Unknown Source)
-	at pageObjects.ProductPage.isSuccessMessageDisplayed(ProductPage.java:69)
-	at stepDefinitions.ShoppingSteps.wishlist_should_contain_the_added_product(ShoppingSteps.java:116)
-	at ✽.wishlist should contain the added product(file:///C:/Workspaces/Dec2025BatchTest/CloudBerry_BDD_Framework/CloudBerry_BDD_Framework/src/test/resources/features/TC05_AddToWishList.feature:13)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1211083409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1211083409'><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference ddfa3269-52d6-4303-8ade-5f4dde9e343a is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0f6d9dc9-0ac3-4189-a827-950f2d449aea, getElementText {id=ddfa3269-52d6-4303-8ade-5f4dde9e343a}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0.1, moz:accessibilityChecks: false, moz:buildID: 20251217121356, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29152, moz:profile: C:\Users\shada\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (0f6d9dc9-0ac3-4189-a827-950f2d449aea)] -&gt; xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]]
-Session ID: 0f6d9dc9-0ac3-4189-a827-950f2d449aea
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy42.getText(Unknown Source)
-	at pageObjects.ProductPage.isSuccessMessageDisplayed(ProductPage.java:69)
-	at stepDefinitions.ShoppingSteps.wishlist_should_contain_the_added_product(ShoppingSteps.java:116)
-	at ✽.wishlist should contain the added product(file:///C:/Workspaces/Dec2025BatchTest/CloudBerry_BDD_Framework/CloudBerry_BDD_Framework/src/test/resources/features/TC05_AddToWishList.feature:13)
-</pre></div></td>
-<td>28</td>
-<td>runners.TestRunner@7e6f74c</td></tr>
+<td>35</td>
+<td>runners.TestRunner@1757cd72</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
@@ -198,22 +143,27 @@ Session ID: 0f6d9dc9-0ac3-4189-a827-950f2d449aea
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login"</td>
 <td></td>
 <td>9</td>
-<td>runners.TestRunner@7e6f74c</td></tr>
+<td>runners.TestRunner@1757cd72</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to wishlist", "Add Product to Wish List"</td>
+<td></td>
+<td>30</td>
+<td>runners.TestRunner@1757cd72</td></tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User launches application successfully", "Launch Application"</td>
 <td></td>
 <td>10</td>
-<td>runners.TestRunner@7e6f74c</td></tr>
+<td>runners.TestRunner@1757cd72</td></tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a product to shopping cart", "Add Product to Cart"</td>
 <td></td>
-<td>34</td>
-<td>runners.TestRunner@7e6f74c</td></tr>
+<td>13</td>
+<td>runners.TestRunner@1757cd72</td></tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register as an affiliate", "Affiliate Registration"</td>
 <td></td>
-<td>8</td>
-<td>runners.TestRunner@7e6f74c</td></tr>
+<td>12</td>
+<td>runners.TestRunner@1757cd72</td></tr>
 </table><p>
 </body>
 </html>

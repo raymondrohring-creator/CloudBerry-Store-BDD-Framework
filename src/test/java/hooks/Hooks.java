@@ -16,7 +16,7 @@ public class Hooks extends BaseClass {
 	@Before
 	public void beforeScenario(Scenario scenario) {
 
-	    String os = System.getProperty("os", "windows");
+	    String os = System.getProperty("os", "mac");
 
 	    // 1) Read from testng.xml parameter (if running suite)
 	    String browser = null;

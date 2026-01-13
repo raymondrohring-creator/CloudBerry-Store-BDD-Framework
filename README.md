@@ -15,11 +15,11 @@
 From project root:
 
 ```bash
-mvn test -Dos=windows -Dbrowser=chrome
+mvn test -Dos=mac -Dbrowser=chrome
 ```
 
 Defaults:
-- os=windows
+- os=mac
 - browser=chrome
 
 Update credentials in:

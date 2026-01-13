@@ -17,11 +17,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -86,9 +86,9 @@ public class BaseClass {
 					localDriver = new RemoteWebDriver(URI.create(gridURL).toURL(), firefoxOptions.merge(capabilities));
 					break;
 
-				case "edge":
-					EdgeOptions edgeOptions = new EdgeOptions();
-					localDriver = new RemoteWebDriver(URI.create(gridURL).toURL(), edgeOptions.merge(capabilities));
+				case "safari":
+					SafariOptions safariOptions = new SafariOptions();
+					localDriver = new RemoteWebDriver(URI.create(gridURL).toURL(), safariOptions.merge(capabilities));
 					break;
 
 				default:
@@ -111,9 +111,9 @@ public class BaseClass {
                     localDriver = new ChromeDriver();
                     break;
 
-                case "edge":
-                    log.info("Launching Edge browser");
-                    localDriver = new EdgeDriver();
+                case "safari":
+                    log.info("Launching Safari browser");
+                    localDriver = new SafariDriver();
                     break;
 
                 case "firefox":
