@@ -1,9 +1,3 @@
-Below is a **fully tailored `README.md`** based on what’s inside your uploaded **CloudBerry_BDD_Framework.zip** (Cucumber 7 + Selenium 4 + TestNG + Extent Reports, with real runners, hooks, steps, and features).
-
-You can copy-paste this directly into your GitHub repo.
-
----
-
 # CloudBerry Store – Hybrid-to-BDD Automation Framework
 
 A **Java-based Hybrid to BDD test automation framework** for the CloudBerry Store web application, built with **Selenium 4, Cucumber 7, TestNG, and Extent Reports**.
@@ -269,12 +263,3 @@ This keeps the framework **clean, scalable, and enterprise-ready**.
 * Extent Reports for leadership
 * Modular step definitions
 * Selenium 4 modern browser control
-
----
-
-If you’d like, I can also generate:
-
-* **Architecture diagrams**
-* **Framework onboarding docs**
-* **How-to guides for new QA engineers**
-* or a **resume-ready project description** for this framework.
