@@ -44,7 +44,8 @@ CloudBerry_BDD_Framework
 │               ├── TC02_Login.feature
 │               ├── TC03_AddToCart.feature
 │               ├── TC04_CompletePurchase.feature
-│               └── TC05_AddToWishList.feature
+|               ├── TC05_AddToWishList.feature
+│               └── TC06_AddAffiliate.feature
 │
 ├── target
 │   ├── cucumber-report.html
@@ -141,7 +142,7 @@ Make sure you have:
 
 * Java 21+
 * Maven 3.8+
-* Chrome / Edge browser
+* Chrome & Firefox browsers
 * WebDriver binaries (or WebDriverManager)
 
 ---
